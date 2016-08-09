@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+@mixin desktop-container {
+  @media #{$media-desktop} {
+    padding: 20px 0 0 0;
+    width: 800px;
+    margin: 0 auto;
+
+    .col-sm-8 {
+      padding: 10px 15px 0;
+    }
+
+    .grid {
+      &-image {
+        min-height: 360px;
+      }
+    }
+
+    .sidebar {
+      margin: 0;
+    }
+  }
+}
